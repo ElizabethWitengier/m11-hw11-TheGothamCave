@@ -11,10 +11,9 @@ Universal Styling
 }
 
 body {
-  font-family: tahoma;
+  font-family: Helvetica Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif""serif""sans-serif";
   color: var(--black);
   font-size: 20px;
-  margin: 0;
   box-sizing: border-box;
   min-height: 100vh;
   margin: 16px;
@@ -35,7 +34,27 @@ h2 {
 h3 {
   color: var(--red);
   font-weight: bold;
-  font-size: 35px;
+  font-size: 25px;
+}
+
+h4 {
+  color: var(--red);
+  font-weight: bold;
+  font-size: 25px;
+}
+
+/* Links Styling */
+
+a {
+	text-decoration: none;
+  color: var(--red);
+	transition: color 1s;
+}
+
+ a:hover {
+  transition: color 1s;
+  color: #FF8928;
+  text-decoration: none;
 }
 
 
