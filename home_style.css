@@ -121,6 +121,10 @@ img {
     max-width: 820px;
   }
 
+  .navigation {
+    justify-content: center;
+  }
+
   #bigGrid {
     display: none;
   }
@@ -156,6 +160,11 @@ img {
   body {
     max-width: 390px;
     margin: 0px;
+  }
+
+  .navigation {
+    flex-direction: column;
+    align-content: center;
   }
 
   #bigGrid {
