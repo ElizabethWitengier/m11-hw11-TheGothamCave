@@ -16,7 +16,11 @@ body {
   font-size: 20px;
   box-sizing: border-box;
   min-height: 100vh;
-  margin: 16px;
+  margin: 0px;
+}
+
+.main_text p {
+  margin: 20px;
 }
 
 h1 {
@@ -46,9 +50,9 @@ h4 {
 /* Links Styling */
 
 a {
-	text-decoration: none;
+  text-decoration: none;
   color: var(--red);
-	transition: color 1s;
+  transition: color 1s;
 }
 
  a:hover {
