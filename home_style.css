@@ -9,16 +9,6 @@ Universal Styling
   --hover: #F78828;
 }
 
-.hero-image {
-  background-image:url(../the\ batman\ site\ assets/);
-  background-color: var(--black);
-  height: auto;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
@@ -71,11 +61,23 @@ a {
 }
 
 
+/* Header Styling */
+
+.header_image {
+  background-image: url(/batmansiteassets/site-background.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.hero_image {
+  display: flex;
+  justify-content: center;
+}
+
 /* Navigation Styling */
 
 .navigation {
   display: flex;
-  overflow: hidden;
   position: sticky;
   top: 0;
   z-index: 1;
@@ -92,14 +94,14 @@ a {
 .navigation button {
   background-color: var(--red);
   color: var(--white);
-  padding: 10px 15px;
+  padding: 10px 20px;
   transition: 0.3s;
   font-size: 20px;
   font-family: Tahoma;
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
   border-bottom: 3px solid var(--red);
-  margin: 40px 6px 0 6px;
+  margin: 0px 6px 0 6px;
 }
 
 .navigation button:hover {
@@ -145,7 +147,7 @@ footer {
   background-color: var(--red);
   color: var(--white);
   justify-content: center;
-  font: 17px;
+  font: 12px;
 }
 
 @media screen and (max-width: 820px){
