@@ -21,11 +21,12 @@ Universal Styling
 
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: var(--black);
+  color: white;
   font-size: 20px;
   box-sizing: border-box;
   min-height: 100vh;
   margin: 0px;
+  background: #000000;
 }
 
 .main_text p {
@@ -45,7 +46,6 @@ h2 {
 }
 
 h3 {
-  color: var(--red);
   font-weight: bold;
   font-size: 25px;
 }
@@ -66,7 +66,7 @@ a {
 
  a:hover {
   transition: color 1s;
-  color: var(--hover);
+  color: #FF8928;
   text-decoration: none;
 }
 
@@ -140,12 +140,11 @@ img {
 
 /* Footer Styling */
 
-.footer {
+footer {
   display: flex;
-  background-color: var(--black);
+  background-color: var(--red);
   color: var(--white);
   justify-content: center;
-  padding: 0 15px;
   font: 17px;
 }
 
