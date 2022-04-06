@@ -70,8 +70,13 @@ a {
 }
 
 .hero_image {
-  display: flex;
-  justify-content: center;
+  position: relative;  
+}
+
+img.hero_image {
+ width: 100%;
+ display: block;
+ min-height: 300px; 
 }
 
 /* Navigation Styling */
@@ -94,9 +99,9 @@ a {
 .navigation button {
   background-color: var(--red);
   color: var(--white);
-  padding: 10px 20px;
+  padding: 10px 40px;
   transition: 0.3s;
-  font-size: 20px;
+  font-size: 25px;
   font-family: Tahoma;
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
