@@ -1,0 +1,249 @@
+/*=========================
+Universal Styling
+===========================*/
+
+:root {
+  --black:#000000;
+  --red: #c9050d;
+  --white: #ffffff;
+  --hover: #F78828;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  font-size: 20px;
+  box-sizing: border-box;
+  min-height: 100vh;
+  margin: 0px;
+  background: #000000;
+}
+
+.main_text p {
+  margin: 20px;
+}
+
+h1 {
+  color: var(--red);
+  font-weight: bold;
+  font-size: 65px;
+}
+
+h2 {
+  color: var(--red);
+  font-weight: bold;
+  font-size: 45px;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+h4 {
+  color: var(--red);
+  font-weight: bold;
+  font-size: 25px;
+}
+
+/* Links Styling */
+
+a {
+  text-decoration: none;
+  color: var(--red);
+  transition: color 1s;
+}
+
+ a:hover {
+  transition: color 1s;
+  color: var(--hover);
+  text-decoration: none;
+}
+
+
+/* Header Styling */
+
+.header_image {
+  background-image: url(/batmansiteassets/site-background.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.hero_image {
+  position: relative;  
+}
+
+img.hero_image {
+ width: 100%;
+ display: block;
+ min-height: 300px; 
+}
+
+/* Navigation Styling */
+
+.navigation {
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  border-bottom: 5px solid var(--red);
+  background-color: var(--black);
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+
+/* Buttons Styling */
+
+.navigation button {
+  background-color: var(--red);
+  color: var(--white);
+  padding: 10px 40px;
+  transition: 0.3s;
+  font-size: 25px;
+  font-family: Tahoma;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  border-bottom: 3px solid var(--red);
+  margin: 0px 6px 0 6px;
+}
+
+.navigation button:hover {
+  background-color: var(--hover);
+  color: var(--black);
+}
+
+
+/*Styling for HomePage*/
+
+#bigGrid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    'poster pic1 pic2'
+    'poster pic3 pic4';
+    gap: 15px 50px;
+}
+
+#Grid_less_Poster {
+  display: none;
+}
+
+#main_content {
+  display: grid;
+  justify-items: center;
+}
+
+#main_content>p {
+  max-width: 1080px;
+}
+
+img {
+  max-width: 1080px;
+}
+
+
+/* Footer Styling */
+
+footer {
+  display: flex;
+  background-color: var(--red);
+  color: var(--white);
+  justify-content: center;
+  font: 12px;
+}
+
+@media screen and (max-width: 820px){
+  body {
+    max-width: 820px;
+  }
+
+  .navigation {
+    justify-content: center;
+  }
+
+  #bigGrid {
+    display: none;
+  }
+  
+  #Grid_less {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      'poster2 text';
+    align-items: center;
+  }
+
+  img {
+    max-width: 820px;
+  }
+
+  body>p {
+    grid-area: text;
+  }
+
+  #main_content>p {
+    max-width: 410px;
+  }
+
+  #Grid_less_Poster {
+    display: block;
+    grid-area: poster2;
+  }
+}
+
+@media screen and (max-width: 426px){
+  body {
+    max-width: 390px;
+    margin: 0px;
+  }
+
+  .navigation {
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .navigation button {
+    padding: 10px 15px;
+    font-size: 20px;
+    font-family: Tahoma;
+    border-bottom: 3px solid var(--red);
+    margin-top: 10px;
+  }
+
+  #bigGrid {
+    display: none;
+  }
+
+  #Grid_less {
+    display: block;
+    align-items: center;
+  }
+
+  img {
+    max-width: 390px;
+  }
+
+  body>p {
+    grid-area: text;
+  }
+
+  #main_content {
+    justify-items: center;
+  }
+
+  #main_content
+
+  #main_content>p {
+    max-width: 212px;
+  }
+
+  #Grid_less_Poster {
+    display: block;
+    position: relative;
+    left: 70px;
+  }
+}
