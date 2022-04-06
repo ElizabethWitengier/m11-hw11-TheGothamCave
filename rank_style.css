@@ -5,7 +5,7 @@ Universal Styling
 :root {
   --black:#000000;
   --red: #c9050d;
-  --orange: #f78828;
+  --hover: #f78828;
   --white: #ffffff;
   
 }
@@ -45,6 +45,61 @@ h3 {
   font-weight: bold;
   font-size: 35px;
 }
+
+/* Buttons Styling */
+ 
+.tablinks {
+  background-color: var(--red);
+  color: var(--white);
+  padding: 20px 40px;
+  transition: 0.3s;
+  font-size: 25px;
+  font-family: Tahoma;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  border-bottom: 3px solid var(--red);
+  margin: 0px 6px 0 6px;
+  vertical-align: middle;
+}
+
+ .tablinks:hover {
+  background-color: var(--hover);
+  color: var(--black);
+ }
+
+ .tablinks {
+   text-decoration: none;
+ }
+
+
+/* Banner Styling */
+
+.banner {
+  grid-row: 2 / 3;
+  grid-column: span 5;
+  object-fit: cover;
+  justify-content: center;
+  align-items: center;  
+}
+
+.banner_image {
+  object-fit: cover;
+  max-height: 100%;
+  object-position: 60% 30%;
+}
+
+/* Footer Styling */
+ 
+.footer {
+  display: grid;
+  grid-row: 9 / -1;
+  grid-column: span 5;
+  background-color: var(--red);
+  color: var(--white);  
+  justify-items: center;
+  align-items: center;
+}
+
 
 /*Styling for Page 3*/
 
