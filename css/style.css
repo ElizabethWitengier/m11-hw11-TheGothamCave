@@ -95,10 +95,10 @@ Universal Styling
 
 /* Buttons Styling */
  
-.navigation button {
+.tablinks {
   background-color: var(--red);
   color: var(--white);
-  padding: 8px 40px;
+  padding: 20px 40px;
   transition: 0.3s;
   font-size: 25px;
   font-family: Tahoma;
@@ -106,13 +106,18 @@ Universal Styling
   border-top-right-radius: 7px;
   border-bottom: 3px solid var(--red);
   margin: 0px 6px 0 6px;
- }
-  
- .navigation button:hover {
+  vertical-align: middle;
+}
+
+ .tablinks:hover {
   background-color: var(--hover);
   color: var(--black);
  }
- 
+
+ .tablinks {
+   text-decoration: none;
+ }
+
 
 /* Banner Styling */
 
