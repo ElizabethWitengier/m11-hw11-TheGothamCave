@@ -50,13 +50,13 @@ h3 {
  
 .tablinks {
   background-color: var(--red);
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
   color: var(--white);
   padding: 20px 40px;
   transition: 0.3s;
   font-size: 25px;
   font-family: Tahoma;
-  border-top-left-radius: 7px;
-  border-top-right-radius: 7px;
   border-bottom: 3px solid var(--red);
   margin: 0px 6px 0 6px;
   vertical-align: middle;
