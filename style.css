@@ -14,8 +14,8 @@ Universal Styling
   font-size: 20px;
   min-height: 100vh;
   margin: 0px;
-  grid-template-columns: 200px 3fr 2fr 2fr 200px;
-  grid-template-rows: 100px 500px 30px 120px repeat(4, 1fr) 60px;
+  grid-template-columns: 200px 2fr 2fr 2fr 200px;
+  grid-template-rows: 100px 500px 30px 120px repeat(4, 1fr) .2fr;
   display: inline-grid;
   box-sizing: border-box;
  }
@@ -67,7 +67,7 @@ Universal Styling
   top: 50%;
   left: 50%;
   text-align: center;
-  margin: 10px 20px 30px;
+  margin: 10px 20px 20px 20px;
  }
 
  .text h3 {
@@ -107,15 +107,12 @@ Universal Styling
   border-bottom: 3px solid var(--red);
   margin: 0px 6px 0 6px;
   vertical-align: middle;
+  text-decoration: none;
 }
 
  .tablinks:hover {
   background-color: var(--hover);
   color: var(--black);
- }
-
- .tablinks {
-   text-decoration: none;
  }
 
 /* Banner Styling */
@@ -134,7 +131,7 @@ Universal Styling
   object-fit: cover;
   width: 100%;
   height: 100%;
-  object-position: 100% 0%;
+  object-position: 100% 22%;
 }
 
 /* Container Styling */
@@ -164,32 +161,58 @@ Universal Styling
 
 /* Poster Styling */
 
-img.poster {
+.poster_image {
   grid-row: 5 / 9;
   grid-column: 2 / 3;
   object-fit: cover;
+  width: 95%;
+  height: 1000px;
   justify-self: center;
-  height: 96%;
-  max-height: 100%;
-  margin: 20px 0 20px 0;
-}
+  align-self: top;
+  margin: 20px 20px 0 20px;
+  }
 
 .poster_overlay {
   grid-row: 5 / 9;
   grid-column: 2 / 3;
   object-fit: cover;
   justify-self: center;
-  height: 95%;
-  width: 80%;
+  width: 95%;
+  height: 1000px;
   margin-top: 20px;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: var(--black);
+  padding-bottom: 50px;
+  max-height: 100%;
+  background: var(--black);
   text-align: center;
+  align-content: center;
+  opacity: 0;
+  animation-name: fade-in;
+  animation-delay: 1s;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+ }
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  16% {
+   opacity: 1;
+  }
+  50% {
+    opacity: 1;
+   }
+  84% {
+   opacity: 1;
+  }
+  100% {
+   opacity: 0;
+  }
 }
 
-.batman:hover {
+.poster_overlay:hover  {
   opacity: 1;
+  transition-duration: 2s;
 }
 
 /* Batman Styling */
@@ -197,15 +220,12 @@ img.poster {
 .batman_image {
   grid-row: 5 / 7;
   grid-column: 3 / 4;
-}
-
-.batman_image {
   object-fit: cover;
   object-position: 80% 0;
   max-height: 100%;
   width: 95%;
-  height: 500px;
-  padding: 20px 20px 20px 0;
+  height: 495px;
+  padding: 20px 10px 10px 10px;
 }
 
 .batman_overlay {
@@ -214,33 +234,52 @@ img.poster {
   object-fit: cover;
   max-height: 100%;
   width: 95%;
-  height: 500px;
-  margin-top: 20px;
-  opacity: 0;
+  height: 495px;
+  margin: 20px 15px 10px 15px;
   background: var(--black);
-  animation-name: example;
+  text-align: center;
+  align-content: center;
+  opacity: 0;
+  animation-name: fade-in;
+  animation-delay: 4s;
   animation-duration: 4s;
+  animation-iteration-count: 1;
  }
 
-@keyframes example {
-  from {opacity: 0;}
-  to {opacity: 1;;}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  16% {
+   opacity: 1;
+  }
+  50% {
+    opacity: 1;
+   }
+  84% {
+   opacity: 1;
+  }
+  100% {
+   opacity: 0;
+  }
+}
+
+.batman_overlay:hover  {
+  opacity: 1;
+  transition-duration: 2s;
 }
 
 /* Catwoman Styling */
 
-.catwoman {
+.catwoman_image {
   grid-row: 5 / 7;
   grid-column: 4 / 5;
-}
-
-img.catwoman {
   object-fit: cover;
   object-position: 50% 0;
   max-height: 100%;
   width: 95%;
-  height: 500px;
-  padding: 20px 20px 20px 0;
+  height: 495px;
+  padding: 20px 10px 10px 0;
 }
 
 .catwoman_overlay {
@@ -249,31 +288,52 @@ img.catwoman {
   object-fit: cover;
   max-height: 100%;
   width: 95%;
-  height: 500px;
-  margin-top: 20px;
+  height: 495px;
+  margin: 20px 10px 10px 0;
+  background: var(--black);
+  text-align: center;
+  align-content: center;
   opacity: 0;
-  transition: .5s ease;
-  background-color: var(--black);
+  animation-name: fade-in;
+  animation-delay: 7s;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+ }
+
+ @keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  16% {
+   opacity: 1;
+  }
+  50% {
+    opacity: 1;
+   }
+  84% {
+   opacity: 1;
+  }
+  100% {
+   opacity: 0;
+  }
 }
 
-.catwoman:hover {
+.catwoman_overlay:hover  {
   opacity: 1;
+  transition-duration: 2s;
 }
 
 /* Riddler Styling */
 
-.riddler {
+.riddler_image {
   grid-row: 7 / 9;
   grid-column: 3 / 4;
-}
-
-img.riddler {
   object-fit: cover;
-  object-position:70% 0;
+  object-position:50% 0;
   max-height: 100%;
   width: 95%;
-  height: 500px;
-  padding: 20px 20px 20px 0;
+  height: 495px;
+  padding-left: 10px;
 }
 
 .riddler_overlay {
@@ -282,30 +342,51 @@ img.riddler {
   object-fit: cover;
   max-height: 100%;
   width: 95%;
-  height: 500px;
-  margin-top: 20px;
+  height: 495px;
+  margin-left: 5px;
+  background: var(--black);
+  text-align: center;
+  align-content: center;
   opacity: 0;
-  transition: .5s ease;
-  background-color: var(--black);
+  animation-name: fade-in;
+  animation-delay: 13s;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+ }
+
+ @keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  16% {
+   opacity: 1;
+  }
+  50% {
+    opacity: 1;
+   }
+  84% {
+   opacity: 1;
+  }
+  100% {
+   opacity: 0;
+  }
 }
 
-.riddler:hover {
+.riddler_overlay:hover  {
   opacity: 1;
+  transition-duration: 2s;
 }
 
 /* Penguin Styling */
 
-.penguin {
+.penguin_image {
   grid-row: 7 / 9;
   grid-column: 4 / 5;
-}
-img.penguin {
   object-fit: cover;
   object-position: 70% 0;
   max-height: 100%;
   width: 95%;
-  height: 500px;
-  padding: 20px 20px 20px 0;
+  height: 495px;
 }
 
 .penguin_overlay {
@@ -314,15 +395,38 @@ img.penguin {
   object-fit: cover;
   max-height: 100%;
   width: 95%;
-  height: 500px;
-  margin-top: 20px;
+  height: 495px;
+  background: var(--black);
+  text-align: center;
+  align-content: center;
   opacity: 0;
-  transition: .5s ease;
-  background-color: var(--black);
+  animation-name: fade-in;
+  animation-delay: 10s;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+ }
+
+ @keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  16% {
+   opacity: 1;
+  }
+  50% {
+    opacity: 1;
+   }
+  84% {
+   opacity: 1;
+  }
+  100% {
+   opacity: 0;
+  }
 }
 
-.penguin:hover {
+.penguin_overlay:hover  {
   opacity: 1;
+  transition-duration: 2s;
 }
 
 /* Footer Styling */
@@ -333,7 +437,7 @@ img.penguin {
   grid-column: span 5;
   background-color: var(--black);
   color: var(--white);
-  border-top-style: 3px solid var(--red);  
+  border-top-style: px solid var(--red);  
   justify-items: center;
   align-items: center;
   margin-top: 10px;
