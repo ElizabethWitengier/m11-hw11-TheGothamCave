@@ -218,19 +218,13 @@ img.poster {
   margin-top: 20px;
   opacity: 0;
   background: var(--black);
-  background-repeat: no-repeat;
-  -webkit-animation-duration: 10s;animation-duration: 10s;
-  -webkit-animation-fill-mode: both;animation-fill-mode: both;
+  animation-name: example;
+  animation-duration: 4s;
  }
- 
-@-webkit-keyframes fadeOut {
-  0% {opacity: 1;}
-  100% {opacity: 0;}
-}
 
-@keyframes fadeOut {
-  0% {opacity: 1;}
-  100% {opacity: 0;}
+@keyframes example {
+  from {opacity: 0;}
+  to {opacity: 1;;}
 }
 
 /* Catwoman Styling */
