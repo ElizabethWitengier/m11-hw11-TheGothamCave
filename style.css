@@ -15,7 +15,7 @@ Universal Styling
   min-height: 100vh;
   margin: 0px;
   grid-template-columns: 200px 2fr 2fr 2fr 200px;
-  grid-template-rows: 100px 500px 30px 120px repeat(4, 1fr) .2fr;
+  grid-template-rows: .1fr .7fr .1fr .1fr repeat(2, 1fr) .1fr;
   display: inline-grid;
   box-sizing: border-box;
  }
@@ -53,7 +53,7 @@ Universal Styling
  .poster_text p {
   line-height: 1.5em;
   color: var(--white);
-  font-size: 35px;
+  font-size: 20px;
   top: 50%;
   left: 50%;
   text-align: center;
@@ -63,7 +63,7 @@ Universal Styling
  .text p {
   line-height: 1.5em;
   color: var(--white);
-  font-size: 20px;
+  font-size: 16px;
   top: 50%;
   left: 50%;
   text-align: center;
@@ -108,6 +108,7 @@ Universal Styling
   margin: 0px 6px 0 6px;
   vertical-align: middle;
   text-decoration: none;
+  border-bottom: 1px var(--redß);
 }
 
  .tablinks:hover {
@@ -137,7 +138,7 @@ Universal Styling
 /* Container Styling */
 
 .grid_container {
-  grid-row: 4 / 9;
+  grid-row: 4 / 7;
   grid-column: 2 / 5;
   justify-content: center;
   align-content: center;
@@ -162,7 +163,7 @@ Universal Styling
 /* Poster Styling */
 
 .poster_image {
-  grid-row: 5 / 9;
+  grid-row: 5 / 7;
   grid-column: 2 / 3;
   object-fit: cover;
   width: 95%;
@@ -173,14 +174,13 @@ Universal Styling
   }
 
 .poster_overlay {
-  grid-row: 5 / 9;
+  grid-row: 5 / 7;
   grid-column: 2 / 3;
   object-fit: cover;
   justify-self: center;
   width: 95%;
   height: 1000px;
   margin-top: 20px;
-  padding-bottom: 50px;
   max-height: 100%;
   background: var(--black);
   text-align: center;
@@ -218,7 +218,7 @@ Universal Styling
 /* Batman Styling */
 
 .batman_image {
-  grid-row: 5 / 7;
+  grid-row: 5 / 6;
   grid-column: 3 / 4;
   object-fit: cover;
   object-position: 80% 0;
@@ -229,7 +229,7 @@ Universal Styling
 }
 
 .batman_overlay {
-  grid-row: 5 / 7;
+  grid-row: 5 / 6;
   grid-column: 3 / 4;
   object-fit: cover;
   max-height: 100%;
@@ -272,7 +272,7 @@ Universal Styling
 /* Catwoman Styling */
 
 .catwoman_image {
-  grid-row: 5 / 7;
+  grid-row: 5 / 6;
   grid-column: 4 / 5;
   object-fit: cover;
   object-position: 50% 0;
@@ -283,7 +283,7 @@ Universal Styling
 }
 
 .catwoman_overlay {
-  grid-row: 5 / 7;
+  grid-row: 5 / 6;
   grid-column: 4 / 5;
   object-fit: cover;
   max-height: 100%;
@@ -326,7 +326,7 @@ Universal Styling
 /* Riddler Styling */
 
 .riddler_image {
-  grid-row: 7 / 9;
+  grid-row: 6 / 7;
   grid-column: 3 / 4;
   object-fit: cover;
   object-position:50% 0;
@@ -337,7 +337,7 @@ Universal Styling
 }
 
 .riddler_overlay {
-  grid-row: 7 / 9;
+  grid-row: 6 / 7;
   grid-column: 3 / 4;
   object-fit: cover;
   max-height: 100%;
@@ -380,7 +380,7 @@ Universal Styling
 /* Penguin Styling */
 
 .penguin_image {
-  grid-row: 7 / 9;
+  grid-row: 6 / 7;
   grid-column: 4 / 5;
   object-fit: cover;
   object-position: 70% 0;
@@ -390,7 +390,7 @@ Universal Styling
 }
 
 .penguin_overlay {
-  grid-row: 7 / 9;
+  grid-row: 6 / 7;
   grid-column: 4 / 5;
   object-fit: cover;
   max-height: 100%;
@@ -433,7 +433,7 @@ Universal Styling
  
 .footer {
   display: grid;
-  grid-row: 9 / -1;
+  grid-row: 7 / -1;
   grid-column: span 5;
   background-color: var(--black);
   color: var(--white);
