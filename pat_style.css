@@ -1,0 +1,76 @@
+
+:root {
+  --black:#000000;
+  --red: #c9050d;
+  --white: #ffffff;
+  --hover: #F78828;
+ }
+
+
+
+body {
+	margin: 0;
+	
+	
+}
+
+
+/* Navigation Styling */
+
+.navigation {
+  grid-column: span 5;
+  border-bottom: 6px solid var(--red);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-top: 10px;
+  position: sticky;
+  background-color: var(--black);
+  top: 0;
+}
+
+
+/* Buttons Styling */
+
+.tablinks {
+  background-color: var(--red);
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  color: var(--white);
+  padding: 20px 40px;
+  transition: 0.3s;
+  font-size: 25px;
+  font-family: Tahoma;
+  border-bottom: 3px solid var(--red);
+  margin: 0px 6px 0 6px;
+  vertical-align: middle;
+}
+
+ .tablinks:hover {
+  background-color: var(--hover);
+  color: var(--black);
+ }
+
+ .tablinks {
+   text-decoration: none;
+ }
+
+/* Main Text Styling */
+
+.main_text {
+	margin: 15px;
+	color: white;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.header__title {
+	text-align: center;
+    font-family: "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	color: var(--red);
+
+}
+
+
+
+
