@@ -23,6 +23,12 @@ Elizabeth (Team Leader):
 -Recoded homepage as a full grid design to include the header and footer to mirror the original home page mockup (desktop, tablet & mobile).
 -Deployed site and submitted the assignment.
 
+Changes from Mockup to Final:
+-Home button was moved to be with other nav buttons.
+-Hover color was changed to a darker orange.
+-Text on home page was reduced to be less "clunky."
+
 Team challenges:
--Coding an animated overlay
+-Coding an animated overlay with text.
+-The orginal black background image /batman_site_assets/site-background.png was prompting an error message when deployed to github; therefore, the background was change to black.
 
