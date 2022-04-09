@@ -436,7 +436,7 @@ Universal Styling
 
 /* Mobile Device Styling */
 
-@media screen and (max-width: 550px) {
+@media only screen and (max-device-width: 800px) {
   p {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--black);
