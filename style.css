@@ -9,24 +9,16 @@ Universal Styling
   --hover: #F78828;
  }
   
- .body {
+ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 20px;
   min-height: 100vh;
   margin: 0px;
   display: grid;
+  background-color: var(--white);
   box-sizing: border-box;
-  background-color: var(--black);
   grid-template-columns: .4fr 2fr 2fr 2fr .4fr;
-  grid-template-rows: .1fr .7fr .1fr .1fr repeat(2, .7fr) .1fr;
-  grid-template-areas:
-    "nav nav nav nav nav"
-    "ban ban ban ban ban"
-    "bk bk bk bk bk"
-    "bk hd hd hd bk"
-    "bk post bat cat bk"
-    "bk post rid pen bk"
-    "ft ft ft ft ft";
+  grid-template-rows: .1fr .7fr .1fr .1fr repeat(2, .7fr) .1fr;  
  }
   
  h1 {
@@ -84,10 +76,23 @@ Universal Styling
   margin: 0;
 }
 
+/* Container Styling */
+
+.grid_container {
+  grid-template-rows: 4 / 7;
+  grid-template-columns: 2 / 5;  
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  background-color: var(--white);
+}
+
 /* Navigation Styling */
 
 .navigation {
-  grid-area: 'nav';
+  grid-template-rows: 1 / 2;
+  grid-template-columns: span 5;  
   border-bottom: 6px solid var(--red);
   display: flex;
   flex-direction: row;
@@ -101,6 +106,8 @@ Universal Styling
 /* Buttons Styling */
  
 .tablinks {
+  grid-template-rows: 1 / 2;
+  grid-template-columns: span 5;    
   background-color: var(--red);
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
@@ -122,7 +129,8 @@ Universal Styling
 /* Banner Styling */
 
 .banner {
-  grid-area: 'ban';
+  grid-template-rows: 2 / 3;
+  grid-template-columns: span 5;    
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -131,28 +139,19 @@ Universal Styling
 }
 
 .banner_image {
+  grid-template-rows: 2 / 3;
+  grid-template-columns: span 5;    
   object-fit: cover;
   width: 100%;
   height: 100%;
   object-position: 100% 22%;
 }
 
-/* Container Styling */
-
-.grid_container {
-  grid-row: 4 / 7;
-  grid-column: 2 / 5;
-  justify-content: center;
-  align-content: center;
-  justify-items: center;
-  align-items: center;
-  background-color: var(--white);
-}
-
 /* Header Styling */
 
 .header {
-  grid-area: 'hd';
+  grid-template-rows: 4 / 5;
+  grid-template-columns: 2 / 5;  
   align-items: center;
   justify-items: center;
   text-align: center;
@@ -164,7 +163,8 @@ Universal Styling
 /* Poster Styling */
 
 .poster_image {
-  grid-area: 'post';
+  grid-template-rows: 5 / 7;
+  grid-template-columns: 2 / 3;  
   object-fit: cover;
   width: 100%;
   height: 1000px;
@@ -173,7 +173,8 @@ Universal Styling
   }
 
 .poster_overlay {
-  grid-area: 'post';
+  grid-template-rows: 5 / 7;
+  grid-template-columns: 2 / 3; 
   object-fit: cover;
   justify-self: center;
   width: 100%;
@@ -216,7 +217,8 @@ Universal Styling
 /* Batman Styling */
 
 .batman_image {
-  grid-area: 'bat';
+  grid-template-rows: 5 / 6;
+  grid-template-columns: 3 / 4; 
   object-fit: cover;
   object-position: 80% 0;
   padding: 20px 0 20px 0;
@@ -226,7 +228,8 @@ Universal Styling
 }
 
 .batman_overlay {
-  grid-area: 'bat';
+  grid-template-rows: 5 / 6;
+  grid-template-columns: 3 / 4;
   object-fit: cover;
   max-height: 100%;
   width: 100%;
@@ -267,7 +270,8 @@ Universal Styling
 /* Catwoman Styling */
 
 .catwoman_image {
-  grid-area: 'cat';
+  grid-template-rows: 5 / 6;
+  grid-template-columns: 4 / 5;
   object-fit: cover;
   object-position: 50% 0;
   max-height: 100%;
@@ -277,7 +281,8 @@ Universal Styling
 }
 
 .catwoman_overlay {
-  grid-area: 'cat';
+  grid-template-rows: 5 / 6;
+  grid-template-columns: 4 / 5;
   object-fit: cover;
   max-height: 100%;
   width: 100%;
@@ -318,9 +323,10 @@ Universal Styling
 /* Riddler Styling */
 
 .riddler_image {
-  grid-area: 'rid';
+  grid-template-rows: 6 / 7;
+  grid-template-columns: 3 / 4;
   object-fit: cover;
-  object-position:50% 0;
+  object-position: 50% 0;
   max-height: 100%;
   width: 100%;
   height: 500px;
@@ -328,7 +334,8 @@ Universal Styling
 }
 
 .riddler_overlay {
-  grid-area: 'rid';
+  grid-template-rows: 6 / 7;
+  grid-template-columns: 3 / 4;
   object-fit: cover;
   max-height: 100%;
   width: 100%;
@@ -369,7 +376,8 @@ Universal Styling
 /* Penguin Styling */
 
 .penguin_image {
-  grid-area: 'pen';
+  grid-template-rows: 6 / 7;
+  grid-template-columns: 4 / 5;
   object-fit: cover;
   object-position: 80% 0;
   max-height: 100%;
@@ -379,7 +387,8 @@ Universal Styling
 }
 
 .penguin_overlay {
-  grid-area: 'pen';
+  grid-template-rows: 6 / 7;
+  grid-template-columns: 4 / 5;
   object-fit: cover;
   max-height: 100%;
   width: 100%;
@@ -420,8 +429,7 @@ Universal Styling
 /* Footer Styling */
  
 .footer {
-  display: grid;
-  grid-area: 'ft';
+  grid-template-rows: 7 / 8;
   background-color: var(--black);
   color: var(--white);
   border-top: 6px solid var(--red);
@@ -429,26 +437,19 @@ Universal Styling
   align-items: center;
 }
 
-/* Mobile Device Styling */
+
+
+/* Tablet Device Styling */
 
 @media screen and (max-width: 820px){
   body {
+    max-width: 820px;
     grid-template-columns: 1fr;
-    grid-template-rows: .1fr 1fr .1fr repeat(10, 1fr) .3fr;
-    grid-template-areas:
-    'nav'
-    'ban'
-    'hd'
-    'post'
-    'bat'
-    'cat'
-    'rid'
-    'pen'
-    'ft'
-    ;
+    grid-template-rows: .1fr 1fr .1fr repeat(11, 1fr) .3fr;
   }
 
   .navigation {
+    grid-template-rows: 1 / 2;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
@@ -457,6 +458,7 @@ Universal Styling
   }
 
   .tablinks {
+    grid-template-rows: 1 / 2;
     background-color: var(--red);
     border-top-right-radius: 8px;
     border-top-left-radius: 8px;
@@ -469,7 +471,16 @@ Universal Styling
     border-radius: 10px;
   }
 
+  .banner{
+    grid-template-rows: 2 / 3;
+  }
+
+  .header, .grid_container {
+    grid-template-rows: 3 / 4;
+    width: 100%;
+  }
   .poster_image {
+    grid-template-rows: 4 / 5;
     height: 1000px;
     width: 100%;
     margin: 0;
@@ -478,6 +489,7 @@ Universal Styling
   }
 
   .poster_overlay {
+    grid-template-rows: 5 / 6;
     height: 200px;
     width: 100%;
     margin: none;
@@ -485,6 +497,37 @@ Universal Styling
     background-color: var(--white);
     animation: none;
     opacity: 1;
+  }
+  .batman_image {
+    grid-template-rows: 6 / 7;
+  }
+
+  .batman_overlay {
+    grid-template-rows: 7 / 8;
+  }
+
+  .catwoman_image {
+    grid-template-rows: 8 / 9;
+  }
+
+  .catwoman_overlay {
+    grid-template-rows: 9 / 10;
+  }
+
+  .riddler_image {
+    grid-template-rows: 10 / 11;
+  }
+
+  .riddler_overlay {
+    grid-template-rows: 11 / 12;
+  }
+
+  .penguin_image {
+    grid-template-rows: 12 / 13;
+  }
+
+  .penguin_overlay {
+    grid-template-rows: 13 / 14;
   }
 
   .batman_image, .catwoman_image, .riddler_image, .penguin_image {
@@ -505,6 +548,7 @@ Universal Styling
   }
 
   .footer {
+    grid-template-rows: 14 / 15;
     border-top: 3px solid var(--red);
   }  
 
@@ -561,6 +605,7 @@ Universal Styling
 
 @media screen and (max-width: 426px){
   body {
+    max-width: 426px;
     grid-template-columns: 1fr;
     grid-template-rows: .1fr 1fr .1fr repeat(10, 1fr) .2fr;
     grid-template-areas:
@@ -605,18 +650,17 @@ Universal Styling
   }
 
   .poster_overlay {
-    height: 350px;
+    height: 100px;
     width: 100%;
     margin: none;
     justify-content: center;
     background-color: var(--white);
     animation: none;
     opacity: 1;
-    padding-bottom: 10px;
   }
 
   .batman_image, .catwoman_image, .riddler_image, .penguin_image {
-    height: 225px;
+    height: 200px;
     width: 100%;
     margin: 0;
     justify-content: center;
@@ -624,7 +668,7 @@ Universal Styling
   }
 
   .batman_overlay, .catwoman_overlay, .riddler_overlay, .penguin_overlay {
-    height: 300px;
+    height: auto;
     width: 100%;
     justify-content: center;
     background-color: var(--white);
@@ -661,11 +705,8 @@ Universal Styling
     font-size: 17px;
   }
 
-  p {
-    font-size: 15px;
-  }
-
   .poster_text p {
+    font-size: 17px;
     color: var(--black);
     top: 50%;
     left: 50%;
@@ -681,7 +722,7 @@ Universal Styling
     align-content: center;
     justify-self: center;
     text-align: center;
-    margin: 10px 10px 30px 10px;
+    margin: 10px 10px 20px 10px;
   }
 
   .footer p {
@@ -689,4 +730,5 @@ Universal Styling
     font-size: 15px;
     margin: 8px;
   }
+}
 }
