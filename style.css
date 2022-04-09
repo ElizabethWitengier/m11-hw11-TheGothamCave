@@ -440,12 +440,23 @@ Universal Styling
   p {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--black);
-  }  
+    align-content: center;
+    justify-self: center;
+  }
+  
+  .text p {
+    line-height: 1.25em;
+    color: var(--black);
+    font-size: 12px;
+    text-align: center;
+    margin: 0 5px 0 5px;
+  }
   
   h1 {
     color: var(--red);
     font-weight: bold;
-    font-size: 35px;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
     
   h2 {
@@ -475,21 +486,10 @@ Universal Styling
     margin: 10px 20px 30px;
   }
 
-  p {
-    align-content: center;
-    justify-self: center;
-  }
-  .text p {
-    line-height: 1.25em;
-    color: var(--black);
-    font-size: 12px;
-    text-align: center;
-    margin: 0 5px 0 5px;
-  }
-
   .text h3 {
     color: var(--red);
     text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
   .body {
@@ -578,7 +578,7 @@ Universal Styling
   }
 
   .catwoman_overlay {
-    grid-row: 9/10;
+    grid-row: 9 / 10;
     height: 200px;
     width: 100%;
     justify-content: center;
@@ -588,15 +588,52 @@ Universal Styling
   }
 
   .riddler_image {
-    grid-row: 7 / 8;
+    grid-row: 10 / 11;
+    height: 150px;
+    width: 100%;
+    margin: 0;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .riddler_overlay {
+    grid-row: 11 / 12;
+    height: 200px;
+    width: 100%;
+    justify-content: center;
+    background-color: var(--white);
+    animation: none;
+    opacity: 1;
   }
 
   .penguin_image {
-    grid-row: 8 / 9;
+    grid-row: 12 / 13;
+    height: 150px;
+    width: 100%;
+    margin: 0;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .penguin_overlay {
+    grid-row: 13 / 14;
+    height: 200px;
+    width: 100%;
+    justify-content: center;
+    background-color: var(--white);
+    animation: none;
+    opacity: 1;
   }
 
   .footer {
-    grid-row: 9 / 10;
+    grid-row: 14 / 15;
     font-size: 12px;
+    border-top: 3px solid var(--red);
   }  
+
+  .footer p {
+    color: var(--white);
+    font-size: 10px;
+    margin: 0;
+  }
 }
