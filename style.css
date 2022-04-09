@@ -36,16 +36,19 @@ Universal Styling
  h3 {
   font-weight: bold;
   font-size: 35px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
  }
   
  h4 {
   color: var(--red);
   font-weight: bold;
   font-size: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
  }
 
  .poster_text p {
   line-height: 1.5em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: var(--white);
   font-size: 20px;
   top: 50%;
@@ -56,12 +59,12 @@ Universal Styling
 
  .text p {
   line-height: 1.5em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: var(--white);
   font-size: 16px;
   top: 50%;
   left: 50%;
   text-align: center;
-  margin: 10px 20px 20px 20px;
  }
 
  .text h3 {
@@ -158,11 +161,10 @@ Universal Styling
   grid-row: 5 / 7;
   grid-column: 2 / 3;
   object-fit: cover;
-  width: 95%;
+  width: 100%;
   height: 1000px;
   justify-self: center;
   align-self: top;
-  margin: 20px 20px 0 20px;
   }
 
 .poster_overlay {
@@ -170,7 +172,7 @@ Universal Styling
   grid-column: 2 / 3;
   object-fit: cover;
   justify-self: center;
-  width: 95%;
+  width: 100%;
   height: 1000px;
   margin-top: 20px;
   max-height: 100%;
@@ -214,10 +216,10 @@ Universal Styling
   grid-column: 3 / 4;
   object-fit: cover;
   object-position: 80% 0;
+  padding: 20px 0 20px 0;
   max-height: 100%;
-  width: 95%;
+  width: 100%;
   height: 495px;
-  padding: 20px 10px 10px 10px;
 }
 
 .batman_overlay {
@@ -225,9 +227,8 @@ Universal Styling
   grid-column: 3 / 4;
   object-fit: cover;
   max-height: 100%;
-  width: 95%;
+  width: 100%;
   height: 495px;
-  margin: 20px 15px 10px 15px;
   background: var(--black);
   text-align: center;
   align-content: center;
@@ -269,9 +270,9 @@ Universal Styling
   object-fit: cover;
   object-position: 50% 0;
   max-height: 100%;
-  width: 95%;
+  width: 100%;
   height: 495px;
-  padding: 20px 10px 10px 0;
+  padding: 20px 0 20px 0;
 }
 
 .catwoman_overlay {
@@ -279,9 +280,8 @@ Universal Styling
   grid-column: 4 / 5;
   object-fit: cover;
   max-height: 100%;
-  width: 95%;
+  width: 100%;
   height: 495px;
-  margin: 20px 10px 10px 0;
   background: var(--black);
   text-align: center;
   align-content: center;
@@ -323,7 +323,7 @@ Universal Styling
   object-fit: cover;
   object-position:50% 0;
   max-height: 100%;
-  width: 95%;
+  width: 100%;
   height: 495px;
   padding-left: 10px;
 }
@@ -333,9 +333,8 @@ Universal Styling
   grid-column: 3 / 4;
   object-fit: cover;
   max-height: 100%;
-  width: 95%;
+  width: 100%;
   height: 495px;
-  margin-left: 5px;
   background: var(--black);
   text-align: center;
   align-content: center;
@@ -377,7 +376,7 @@ Universal Styling
   object-fit: cover;
   object-position: 70% 0;
   max-height: 100%;
-  width: 95%;
+  width: 100%;
   height: 495px;
 }
 
@@ -386,7 +385,7 @@ Universal Styling
   grid-column: 4 / 5;
   object-fit: cover;
   max-height: 100%;
-  width: 95%;
+  width: 100%;
   height: 495px;
   background: var(--black);
   text-align: center;
@@ -435,205 +434,3 @@ Universal Styling
 }
 
 /* Mobile Device Styling */
-
-@media only screen and (max-device-width: 800px) {
-  p {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: var(--black);
-    align-content: center;
-    justify-self: center;
-  }
-  
-  .text p {
-    line-height: 1.25em;
-    color: var(--black);
-    font-size: 12px;
-    text-align: center;
-    margin: 0;
-  }
-  
-  h1 {
-    color: var(--red);
-    font-weight: bold;
-    font-size: 25px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-    
-  h2 {
-    color: var(--red);
-    font-weight: bold;
-      font-size: 25px;
-}
-    
-  h3 {
-    font-weight: bold;
-    font-size: 15px;
-  }
-    
-  h4 {
-    color: var(--red);
-    font-weight: bold;
-    font-size: 25px;
-  }
-  
-  .poster_text p {
-    line-height: 1.25em;
-    color: var(--black);
-    font-size: 14px;
-    top: 50%;
-    left: 50%;
-    text-align: center;
-    margin: 10px 20px 30px;
-  }
-
-  .text h3 {
-    color: var(--red);
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  
-  .body {
-    grid-template-columns: 1fr;
-    grid-template-rows: .1fr 1fr .1fr repeat(10, 1fr) .2fr;     
-    margin: 0px;
-    max-height: 1000px;
-  }
-
-  .navigation {
-    grid-row: 1 / 2;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-    align-items: stretch;
-    border-bottom: 3px solid var(--red);
-  }
-
-  .tablinks {
-    background-color: var(--red);
-    border-top-right-radius: 8px;
-    border-top-left-radius: 8px;
-    color: var(--white);
-    padding: 12px 30px;
-    margin: 4px 0 4px 0;
-    transition: 0.3s;
-    font-size: 16px;
-    text-align: center;
-    border-radius: 10px;
-  }
-
-  .banner {
-    grid-row: 2 / 3;
-  }
-
-  .header {
-  grid-row: 3 / 4;
-  }
-
-  .poster_image {
-    grid-row: 4 / 5;
-    height: 500px;
-    width: 100%;
-    margin: 0;
-    justify-content: center;
-    padding: 0;
-  }
-
-  .poster_overlay {
-    grid-row: 5 / 6;
-    height: 150px;
-    width: 100%;
-    margin: none;
-    justify-content: center;
-    background-color: var(--white);
-    animation: none;
-    opacity: 1;
-  }
-
-  .batman_image {
-    grid-row: 6 / 7;
-    height: 150px;
-    width: 100%;
-    margin: 0;
-    justify-content: center;
-    padding: 0;
-  }
-
-  .batman_overlay {
-    grid-row: 7 / 8;
-    height: 200px;
-    width: 100%;
-    justify-content: center;
-    background-color: var(--white);
-    animation: none;
-    opacity: 1;
-  }
-
-  .catwoman_image {
-    grid-row: 8 / 9;
-    height: 150px;
-    width: 100%;
-    margin: 0;
-    justify-content: center;
-    padding: 0;
-  }
-
-  .catwoman_overlay {
-    grid-row: 9 / 10;
-    height: 200px;
-    width: 100%;
-    justify-content: center;
-    background-color: var(--white);
-    animation: none;
-    opacity: 1;
-  }
-
-  .riddler_image {
-    grid-row: 10 / 11;
-    height: 150px;
-    width: 100%;
-    margin: 0;
-    justify-content: center;
-    padding: 0;
-  }
-
-  .riddler_overlay {
-    grid-row: 11 / 12;
-    height: 200px;
-    width: 100%;
-    justify-content: center;
-    background-color: var(--white);
-    animation: none;
-    opacity: 1;
-  }
-
-  .penguin_image {
-    grid-row: 12 / 13;
-    height: 150px;
-    width: 100%;
-    margin: 0;
-    justify-content: center;
-    padding: 0;
-  }
-
-  .penguin_overlay {
-    grid-row: 13 / 14;
-    height: 200px;
-    width: 100%;
-    justify-content: center;
-    background-color: var(--white);
-    animation: none;
-    opacity: 1;
-  }
-
-  .footer {
-    grid-row: 14 / 15;
-    font-size: 12px;
-    border-top: 3px solid var(--red);
-  }  
-
-  .footer p {
-    color: var(--white);
-    font-size: 10px;
-    margin: 0;
-  }
-}

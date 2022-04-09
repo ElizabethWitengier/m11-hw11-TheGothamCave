@@ -68,6 +68,17 @@ body {
   color: var(--red);
 }
 
+/* Footer Styling */
+
+.footer {
+	align-items:baseline;
+	text-align: center;
+	color: var(--white);
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	padding-top: 8px;
+	background: var(--black);
+	height: 50px;
+}
 
 
 
