@@ -421,6 +421,8 @@ Footer Styling
 
 .footer p {
   color: var(--white);
+  text-align: center;
+  margin-top: 15px;
 }
 
 
