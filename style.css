@@ -9,48 +9,48 @@ Universal Styling
   --hover: #F78828;
  }
   
- body {
+body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 20px;
   min-height: 100vh;
+  max-height: 90%;
   margin: 0px;
+  background-color: var(--black);
   display: grid;
-  background-color: var(--white);
-  box-sizing: border-box;
-  grid-template-columns: .4fr 2fr 2fr 2fr .4fr;
-  grid-template-rows: .1fr .7fr .1fr .1fr repeat(2, .7fr) .1fr;  
- }
+  grid-template-columns: .2fr 2fr 1fr 1fr .2fr;
+  grid-template-rows: .1fr .25fr .1fr .1fr repeat(2, 1.5fr) .1fr;  
+}
   
- h1 {
+h1 {
   color: var(--red);
   font-weight: bold;
   font-size: 65px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
- }
+}
   
- h2 {
+h2 {
   color: var(--red);
   font-weight: bold;
   font-size: 45px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
- }
+}
   
- h3 {
+h3 {
   font-weight: bold;
   font-size: 35px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: var(--red);
    text-align: center;
- }
+}
   
- h4 {
+h4 {
   color: var(--red);
   font-weight: bold;
   font-size: 25px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
- }
+}
 
- .poster_text p {
+.poster_text p {
   line-height: 1.5em;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: var(--white);
@@ -59,9 +59,9 @@ Universal Styling
   left: 50%;
   text-align: center;
   margin: 10px 20px 30px;
- }
+}
 
- .text p {
+.text p {
   line-height: 1.5em;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: var(--white);
@@ -70,29 +70,13 @@ Universal Styling
   left: 50%;
   text-align: center;
   margin: 0 20px 0 20px;
- }
-
- .footer p {
-  margin: 0;
-}
-
-/* Container Styling */
-
-.grid_container {
-  grid-template-rows: 4 / 7;
-  grid-template-columns: 2 / 5;  
-  justify-content: center;
-  align-content: center;
-  justify-items: center;
-  align-items: center;
-  background-color: var(--white);
 }
 
 /* Navigation Styling */
 
 .navigation {
-  grid-template-rows: 1 / 2;
-  grid-template-columns: span 5;  
+  grid-row: 1;
+  grid-column: span 5;  
   border-bottom: 6px solid var(--red);
   display: flex;
   flex-direction: row;
@@ -106,8 +90,6 @@ Universal Styling
 /* Buttons Styling */
  
 .tablinks {
-  grid-template-rows: 1 / 2;
-  grid-template-columns: span 5;    
   background-color: var(--red);
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
@@ -121,16 +103,16 @@ Universal Styling
   text-decoration: none;
 }
 
- .tablinks:hover {
+.tablinks:hover {
   background-color: var(--hover);
   color: var(--black);
  }
 
-/* Banner Styling */
+ /* Banner Styling */
 
 .banner {
-  grid-template-rows: 2 / 3;
-  grid-template-columns: span 5;    
+  grid-row: 2;
+  grid-column: span 5;  
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -139,19 +121,29 @@ Universal Styling
 }
 
 .banner_image {
-  grid-template-rows: 2 / 3;
-  grid-template-columns: span 5;    
   object-fit: cover;
   width: 100%;
   height: 100%;
   object-position: 100% 22%;
 }
 
+/* Container Styling */
+
+.grid_container {
+  grid-row: 4 / 7;
+  grid-column: 2 / 5;  
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  background-color: var(--white);
+}
+
 /* Header Styling */
 
 .header {
-  grid-template-rows: 4 / 5;
-  grid-template-columns: 2 / 5;  
+  grid-row: 4;
+  grid-column: 2 / 5;  
   align-items: center;
   justify-items: center;
   text-align: center;
@@ -163,27 +155,27 @@ Universal Styling
 /* Poster Styling */
 
 .poster_image {
-  grid-template-rows: 5 / 7;
-  grid-template-columns: 2 / 3;  
+  grid-row: 5 / 6;
+  grid-column: 2;  
   object-fit: cover;
-  width: 100%;
+  width: 80%;
   height: 1000px;
   justify-self: center;
   align-self: top;
   }
 
 .poster_overlay {
-  grid-template-rows: 5 / 7;
-  grid-template-columns: 2 / 3; 
+  grid-row: 5 / 7;
+  grid-column: 2;  
   object-fit: cover;
   justify-self: center;
+  align-self: top;
   width: 100%;
   height: 1000px;
   margin-top: 20px;
   max-height: 100%;
   background: var(--black);
   text-align: center;
-  align-content: center;
   opacity: 0;
   animation-name: fade-in;
   animation-delay: 1s;
@@ -217,8 +209,8 @@ Universal Styling
 /* Batman Styling */
 
 .batman_image {
-  grid-template-rows: 5 / 6;
-  grid-template-columns: 3 / 4; 
+  grid-row: 5;
+  grid-column: 3;  
   object-fit: cover;
   object-position: 80% 0;
   padding: 20px 0 20px 0;
@@ -228,8 +220,8 @@ Universal Styling
 }
 
 .batman_overlay {
-  grid-template-rows: 5 / 6;
-  grid-template-columns: 3 / 4;
+  grid-row: 5;
+  grid-column: 3;  
   object-fit: cover;
   max-height: 100%;
   width: 100%;
@@ -270,8 +262,8 @@ Universal Styling
 /* Catwoman Styling */
 
 .catwoman_image {
-  grid-template-rows: 5 / 6;
-  grid-template-columns: 4 / 5;
+  grid-row: 5;
+  grid-column: 4;  
   object-fit: cover;
   object-position: 50% 0;
   max-height: 100%;
@@ -281,8 +273,8 @@ Universal Styling
 }
 
 .catwoman_overlay {
-  grid-template-rows: 5 / 6;
-  grid-template-columns: 4 / 5;
+  grid-row: 5;
+  grid-column: 4; 
   object-fit: cover;
   max-height: 100%;
   width: 100%;
@@ -323,8 +315,8 @@ Universal Styling
 /* Riddler Styling */
 
 .riddler_image {
-  grid-template-rows: 6 / 7;
-  grid-template-columns: 3 / 4;
+  grid-row: 6;
+  grid-column: 3; 
   object-fit: cover;
   object-position: 50% 0;
   max-height: 100%;
@@ -334,8 +326,8 @@ Universal Styling
 }
 
 .riddler_overlay {
-  grid-template-rows: 6 / 7;
-  grid-template-columns: 3 / 4;
+  grid-row: 6;
+  grid-column: 3; 
   object-fit: cover;
   max-height: 100%;
   width: 100%;
@@ -376,8 +368,8 @@ Universal Styling
 /* Penguin Styling */
 
 .penguin_image {
-  grid-template-rows: 6 / 7;
-  grid-template-columns: 4 / 5;
+  grid-row: 6;
+  grid-column: 4; 
   object-fit: cover;
   object-position: 80% 0;
   max-height: 100%;
@@ -387,8 +379,8 @@ Universal Styling
 }
 
 .penguin_overlay {
-  grid-template-rows: 6 / 7;
-  grid-template-columns: 4 / 5;
+  grid-row: 6;
+  grid-column: 4; 
   object-fit: cover;
   max-height: 100%;
   width: 100%;
@@ -429,12 +421,12 @@ Universal Styling
 /* Footer Styling */
  
 .footer {
-  grid-template-rows: 7 / 8;
+  grid-row: 7 /8;
+  grid-column: span 5; 
   background-color: var(--black);
   color: var(--white);
   border-top: 6px solid var(--red);
-  justify-items: center;
-  align-items: center;
+  text-align: center;
 }
 
 
@@ -443,9 +435,10 @@ Universal Styling
 
 @media screen and (max-width: 820px){
   body {
-    max-width: 820px;
     grid-template-columns: 1fr;
-    grid-template-rows: .1fr 1fr .1fr repeat(11, 1fr) .3fr;
+    grid-template-rows: .1fr .1fr .1fr 1fr .3fr repeat(4, .3fr .5fr) .1fr;
+    text-align: center;
+    align-items: center;
   }
 
   .navigation {
@@ -471,14 +464,23 @@ Universal Styling
     border-radius: 10px;
   }
 
-  .banner{
+  .banner  {
     grid-template-rows: 2 / 3;
+  }
+
+  .banner_image {
+      max-height: 100%;
+      justify-content: flex-start;
   }
 
   .header, .grid_container {
     grid-template-rows: 3 / 4;
-    width: 100%;
   }
+
+  .grid_container {
+    display: none;
+  }
+
   .poster_image {
     grid-template-rows: 4 / 5;
     height: 1000px;
@@ -490,7 +492,7 @@ Universal Styling
 
   .poster_overlay {
     grid-template-rows: 5 / 6;
-    height: 200px;
+    max-height: 250px;
     width: 100%;
     margin: none;
     justify-content: center;
@@ -530,51 +532,35 @@ Universal Styling
     grid-template-rows: 13 / 14;
   }
 
-  .batman_image, .catwoman_image, .riddler_image, .penguin_image {
-    height: 350px;
-    width: 100%;
-    margin: 0;
-    justify-content: center;
-    padding: 0;
-  }
-
-  .batman_overlay, .catwoman_overlay, .riddler_overlay, .penguin_overlay {
-    height: 300px;
-    width: 100%;
-    justify-content: center;
-    background-color: var(--white);
-    animation: none;
-    opacity: 1;
-  }
-
   .footer {
     grid-template-rows: 14 / 15;
     border-top: 3px solid var(--red);
+    max-height: 30px;
   }  
 
   h1 {
     color: var(--red);
     font-weight: bold;
-    font-size: 45px;
+    font-size: 65px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
   h2 {
     color: var(--red);
     font-weight: bold;
-    font-size: 35px;
+    font-size: 45px;
   }
   
   h3 {
     color: var(--red);
     font-weight: bold;
-    font-size: 25px;
+    font-size: 35px;
   }
   
   h4 {
     color: var(--red);
     font-weight: bold;
-    font-size: 15px;
+    font-size: 20px;
   }
 
   .poster_text p {
@@ -592,75 +578,18 @@ Universal Styling
     align-content: center;
     justify-self: center;
     text-align: center;
-    margin: 0 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
   }
-
 
   .footer p {
     color: var(--white);
     font-size: 15px;
     margin: 8px;
-  }
-
-
-@media screen and (max-width: 426px){
-  body {
-    max-width: 426px;
-    grid-template-columns: 1fr;
-    grid-template-rows: .1fr 1fr .1fr repeat(10, 1fr) .2fr;
-    grid-template-areas:
-    'nav'
-    'ban'
-    'hd'
-    'post'
-    'bat'
-    'cat'
-    'rid'
-    'pen'
-    'ft'
-    ;
-  }
-  .navigation {
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-    align-items: stretch;
-    border-bottom: 3px solid var(--red);
-  }
-
-  .tablinks {
-    background-color: var(--red);
-    border-top-right-radius: 8px;
-    border-top-left-radius: 8px;
-    color: var(--white);
-    padding: 12px 30px;
-    margin: 0 0 8px 0;
-    transition: 0.3s;
-    font-size: 16px;
     text-align: center;
-    border-radius: 10px;
-  }
-
-  .poster_image {
-    height: 550px;
-    width: 100%;
-    margin: 0;
-    justify-content: center;
-    padding: 0;
-  }
-
-  .poster_overlay {
-    height: 100px;
-    width: 100%;
-    margin: none;
-    justify-content: center;
-    background-color: var(--white);
-    animation: none;
-    opacity: 1;
   }
 
   .batman_image, .catwoman_image, .riddler_image, .penguin_image {
-    height: 200px;
+    height: 350px;
     width: 100%;
     margin: 0;
     justify-content: center;
@@ -668,67 +597,186 @@ Universal Styling
   }
 
   .batman_overlay, .catwoman_overlay, .riddler_overlay, .penguin_overlay {
-    height: auto;
+    max-height: 350px;
     width: 100%;
     justify-content: center;
     background-color: var(--white);
     animation: none;
     opacity: 1;
   }
-
-  .footer {
-    border-top: 3px solid var(--red);
-  }  
-
-  h1 {
-    color: var(--red);
-    font-weight: bold;
-    font-size: 35px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  
-  h2 {
-    color: var(--red);
-    font-weight: bold;
-    font-size: 25px;
-  }
-  
-  h3 {
-    color: var(--red);
-    font-weight: bold;
-    font-size: 20px;
-  }
-  
-  h4 {
-    color: var(--red);
-    font-weight: bold;
-    font-size: 17px;
-  }
-
-  .poster_text p {
-    font-size: 17px;
-    color: var(--black);
-    top: 50%;
-    left: 50%;
-    text-align: center;
-    margin: 10px;
-    margin: 10px 10px 30px 10px;
-  }
-
-  .text p {
-    line-height: 1.25em;
-    color: var(--black);
-    font-size: 15px;
-    align-content: center;
-    justify-self: center;
-    text-align: center;
-    margin: 10px 10px 20px 10px;
-  }
-
-  .footer p {
-    color: var(--white);
-    font-size: 15px;
-    margin: 8px;
-  }
 }
-}
+
+
+@media screen and (max-width: 426px){
+    body {
+      max-height: 4390px;
+      grid-template-columns: 1fr;
+      grid-template-rows: .1fr .1fr .1fr 1fr .3fr repeat(4, .3fr .5fr) .1fr;
+      text-align: center;
+      align-items: center;
+    }
+  
+    .navigation {
+      grid-template-rows: 1 / 2;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: center;
+      align-items: stretch;
+      border-bottom: 3px solid var(--red);
+    }
+  
+    .tablinks {
+      grid-template-rows: 1 / 2;
+      background-color: var(--red);
+      border-top-right-radius: 8px;
+      border-top-left-radius: 8px;
+      color: var(--white);
+      padding: 12px 30px;
+      margin: 0 0 8px 0;
+      transition: 0.3s;
+      font-size: 16px;
+      text-align: center;
+      border-radius: 10px;
+    }
+  
+    .banner  {
+      grid-template-rows: 2 / 3;
+    }
+  
+    .banner_image {
+        max-height: 100%;
+        justify-content: flex-start;
+    }
+  
+    .header, .grid_container {
+      grid-template-rows: 3 / 4;
+    }
+  
+    .grid_container {
+      display: none;
+    }
+  
+    .poster_image {
+      grid-template-rows: 4 / 5;
+      height: 800px;
+      width: 100%;
+      margin: 0;
+      justify-content: center;
+      padding: 0;
+    }
+  
+    .poster_overlay {
+      grid-template-rows: 5 / 6;
+      max-height: 375px;
+      width: 100%;
+      margin: none;
+      justify-content: center;
+      background-color: var(--white);
+      animation: none;
+      opacity: 1;
+    }
+    .batman_image {
+      grid-template-rows: 6 / 7;
+    }
+  
+    .batman_overlay {
+      grid-template-rows: 7 / 8;
+    }
+  
+    .catwoman_image {
+      grid-template-rows: 8 / 9;
+    }
+  
+    .catwoman_overlay {
+      grid-template-rows: 9 / 10;
+    }
+  
+    .riddler_image {
+      grid-template-rows: 10 / 11;
+    }
+  
+    .riddler_overlay {
+      grid-template-rows: 11 / 12;
+    }
+  
+    .penguin_image {
+      grid-template-rows: 12 / 13;
+    }
+  
+    .penguin_overlay {
+      grid-template-rows: 13 / 14;
+    }
+  
+    .footer {
+      grid-template-rows: 14 / 15;
+      border-top: 3px solid var(--red);
+      max-height: 30px;
+    }  
+  
+    h1 {
+      color: var(--red);
+      font-weight: bold;
+      font-size: 45px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    h2 {
+      color: var(--red);
+      font-weight: bold;
+      font-size: 35px;
+    }
+    
+    h3 {
+      color: var(--red);
+      font-weight: bold;
+      font-size: 20px;
+    }
+    
+    h4 {
+      color: var(--red);
+      font-weight: bold;
+      font-size: 17px;
+    }
+  
+    .poster_text p {
+      color: var(--black);
+      top: 50%;
+      left: 50%;
+      text-align: center;
+      margin: 10px 20px 30px;
+    }
+  
+    .text p {
+      line-height: 1.25em;
+      color: var(--black);
+      font-size: 17px;
+      align-content: center;
+      justify-self: center;
+      text-align: center;
+      margin: 10px 10px 10px 10px;
+    }
+  
+    .footer p {
+      color: var(--white);
+      font-size: 15px;
+      margin: 8px;
+      text-align: center;
+    }
+  
+    .batman_image, .catwoman_image, .riddler_image, .penguin_image {
+      height: 250px;
+      width: 100%;
+      margin: 0;
+      justify-content: center;
+      padding: 0;
+    }
+  
+    .batman_overlay, .catwoman_overlay, .riddler_overlay, .penguin_overlay {
+      max-height: 350px;
+      width: 100%;
+      justify-content: center;
+      background-color: var(--white);
+      animation: none;
+      opacity: 1;
+    }
+  }
