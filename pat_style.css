@@ -182,4 +182,75 @@ body {
 	border-top: 6px solid var(--red);
 }
 
+/* Mobile and Tablet Styling */
 
+@media screen and (max-width: 820px) {
+	
+ body {
+  grid-auto-columns: auto;
+  grid-auto-rows: 1fr 2fr 6fr 1fr;
+}
+	
+.container {
+  margin: 40px;
+}
+	
+.tablinks {
+  padding: 10px 20px;
+  font-size: 20px;
+  border-bottom: 3px solid var(--red);
+  margin: 0px 6px 0 6px;
+}
+	
+.main_text__bio {
+  margin: 0px 10px;
+  font-size: 14px
+}
+
+.main_text > img {
+  max-width: 97%;
+  margin: 10px;
+}
+	
+.blockbusters {
+  margin: 20px 10px 80px 0px;	
+  font-size: 12px
+}
+	
+.blockbusters > img {
+  float: left;
+  width: 260px;
+  height: 240px;
+  margin-right: 10px;
+}
+
+.rob_text {
+  margin: 20px 10px 80px 10px;	
+  font-size: 12px
+}
+	
+.rob_text > img {
+  float: right;
+  width: 290px;
+  height: 220px;
+  margin-left: 10px;
+}
+	
+.alter_ego {
+  margin: 20px 10px 70px 0px;
+  font-size: 12px
+}
+	
+.alter_ego > img {
+  float: left;
+  width: 270px;
+  height: 260px;
+  margin-right: 10px;	
+  margin-bottom: 60px;
+}
+	
+.new_style {
+  font-size: 14px
+}
+	
+}
