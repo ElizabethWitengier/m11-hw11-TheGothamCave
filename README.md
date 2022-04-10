@@ -25,10 +25,13 @@ Elizabeth (Team Leader):
 
 Changes from Mockup to Final:
 -Home button was moved to be with other nav buttons.
--Hover color was changed to a darker orange.
+-Hover/transition color was changed to a darker orange.
 -Text on home page was reduced to be less "clunky."
 
-Team challenges:
+Team Challenges:
 -Coding an animated overlay with text.
 -The orginal black background image /batman_site_assets/site-background.png was prompting an error message when deployed to github; therefore, the background was change to black.
+-Creating a responsive grid with the center white container.
+-Working with different styles of coding while still trying to learn the coding.
+-Nichalos created his initial pages (home and rankings) with the provided assests, but did not code the pages to match the style guide. He did not respond to the group after his initial commits and did not communicate during group work days.
 
