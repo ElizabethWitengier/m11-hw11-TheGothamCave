@@ -526,14 +526,14 @@ Tablet Styling
     align-items: baseline;
     background-color: var(--black);
     border-top: 6px solid var(--red);
-    height: 20px;
+    height: 35px;
   }
   
   .footer p {
     color: var(--white);
     text-align: center;
     font-size: 1.1rem;
-    margin: 10px 0 10px 0;
+    margin: 5px 0 5px 0;
   }
 
   .batman_image, .catwoman_image, .riddler_image, .penguin_image {
