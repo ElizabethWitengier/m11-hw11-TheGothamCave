@@ -52,12 +52,12 @@ body {
   vertical-align: middle;
 }
 
- .tablinks:hover {
+.tablinks:hover {
    background-color: var(--hover);
    color: var(--black);
  }
 
- .tablinks {
+.tablinks {
    text-decoration: none;
  }
 
@@ -101,18 +101,18 @@ body {
   margin: 0px 10px;
   color: black;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 18px
+  font-size: 17px
 }
 
 .blockbusters {
-  margin: 20px 10px 50px 10px;	
+  margin: 20px 10px 70px 10px;	
   color: black;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 14.5px
 }
 
 .rob_text {
-  margin: 20px 10px 50px 10px;	
+  margin: 20px 10px 70px 10px;	
   color: black;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 14px
@@ -142,29 +142,29 @@ body {
 /* Text Images Styling */
 
 .rob_text > img {
-	float: right;
-	width: 300px;
-	height: 210px;
-	margin-left: 10px;
+   float: right;
+   width: 300px;
+   height: 210px;
+   margin-left: 10px;
 }
 
 .main_text > img {
-    width: 920px;
-    margin: 10px;
+   width: 98%;
+   margin: 10px;
 }
 
 .blockbusters > img {
-	float: right;
-	width: 300px;
-	height: 240px;
-	margin-left: 10px;
+   float: right;
+   width: 300px;
+   height: 240px;
+   margin-left: 10px;
 }
 
 .alter_ego > img {
-	float: right;
-	width: 300px;
-	height: 250px;
-	margin-left: 10px;	
+   float: right;
+   width: 300px;
+   height: 250px;
+   margin-left: 10px;	
 }
 
 
