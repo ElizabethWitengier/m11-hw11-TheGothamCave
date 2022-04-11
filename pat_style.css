@@ -253,3 +253,75 @@ body {
 }
 	
 }
+
+
+@media screen and (max-width: 550px) {
+	
+.navigation {
+  border-bottom: 6px solid var(--red);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}	
+	
+.tablinks {
+  border-radius: 10px;
+  color: var(--white);
+  padding: 5px 10px;
+  transition: 0.3s;
+  font-size: 12px;
+  display: block;
+  margin: 5px 0;
+}
+	
+.header__title {
+  font-size: 26px;
+}
+
+.main_text > img {
+  max-width: 96%;
+}
+	
+.blockbusters > img {
+  float: none;
+  width: 90%;
+  margin: 0 25px;
+  padding-top: 20px;
+}
+
+.blockbusters {
+  border-top: 10px solid var(--red);
+  margin: 0;
+}
+	
+.blockbusters p {
+  margin: 0 10px;
+}
+	
+.rob_text {
+  margin: 30px 10px;	
+  font-size: 12px
+}
+	
+.rob_text > img {
+  float: none;
+  width: 95%;
+}
+	
+.alter_ego {
+  margin: 20px 10px;
+  font-size: 12px
+}
+	
+.alter_ego > img {
+  float: none;
+  width: 90%;
+  margin: 0 25px;
+}
+	
+.new_style {
+  font-size: 13px
+}
+	
+}
