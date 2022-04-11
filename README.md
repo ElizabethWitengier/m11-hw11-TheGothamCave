@@ -7,13 +7,17 @@ Domi:
 -Created banner and personalized website assets. 
 -Sourced and organized all images.
 -Coded hover transition for heading.
+-Coded framework for "Other Batmans" page.
 -Coded final details for adherence to the style guide (font, size, colors).
+
 Nicholas:
 -Coded “Home Page” in all three formats (desktop, tablet & mobile).
 -Coded “Rankings” (page 3) in all three formats (desktop, tablet & mobile).
+
 Carolina:
 -Coded “Rob Pattinson” (page 1) in all three formats (desktop, tablet & mobile).
 -Coded “Other Batmans” (page 2) in all three formats (desktop, tablet & mobile).
+
 Elizabeth (Team Leader): 
 -Organized timeline and roles.
 -Share GitHub repository links/branch for the pull requests, CSS Universal styling, and organize site assets for the team.
@@ -21,6 +25,7 @@ Elizabeth (Team Leader):
 -Coded navigation (flexbox), header & footer for all pages.
 -Coded animation for homepage.
 -Recoded homepage as a full grid design to include the header and footer to mirror the original home page mockup (desktop, tablet & mobile).
+-Created code to stylize the "Box Office Rankings" page.
 -Deployed site and submitted the assignment.
 
 Changes from Mockup to Final:
