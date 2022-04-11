@@ -72,6 +72,25 @@ body {
   height: 100%;
 }
 
+/*Text Styling*/
+
+h1,h2 {
+  font-family: "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+  color: var(--red);	
+}
+
+h2 {
+	font-size: 17px;
+}
+
+h1 {
+	margin: 0;
+	font-size: 40px;
+}
+
+p {
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
 
 
