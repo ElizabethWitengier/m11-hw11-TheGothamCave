@@ -92,6 +92,19 @@ p {
    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/*Footer Styling*/
+
+.footer {
+	align-items:baseline;
+	text-align: center;
+	color: var(--white);
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	padding-bottom: 8px;
+	height: 60px;
+	margin-top: auto;
+	border-top: 6px solid var(--red);
+}
+
 
 
 
