@@ -105,6 +105,51 @@ p {
 	border-top: 6px solid var(--red);
 }
 
+@media screen and (max-width: 1000px) {
+	
+ body {
+  grid-auto-columns: auto;
+  grid-auto-rows: 1fr 2fr 6fr 1fr;
+}
+	
+.container {
+  margin: 40px;
+}
+	
+.tablinks {
+  padding: 10px 20px;
+  font-size: 20px;
+  border-bottom: 3px solid var(--red);
+  margin: 0px 6px 0 6px;
+}
+}
+
+@media screen and (max-width: 550px) {
+	
+.navigation {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    max-height: 100%;
+  }
+
+ .tablinks {
+    text-align: center;
+    padding: 12px 20px;
+    width: 40%;
+    margin: 0 0 8px 0;
+    font-size: .8rem;
+    padding: 10px 30px 10px 30px;
+    margin: 0px 40px 6px 40px;
+    border-radius: 10px;
+  }
+	
+h1 {
+    font-size: 30px;
+}
+}
+
 
 
 
