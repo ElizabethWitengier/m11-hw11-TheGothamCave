@@ -8,6 +8,8 @@ Domi:
 -Sourced and organized all images.
 -Coded hover transition for heading.
 -Coded final details for adherence to the style guide (font, size, colors).
+-Helped coding the "other batmans", page 3 - coding the html.
+-Last minute help editing image sizing on page page 4 "box office"
 Nicholas:
 -Coded “Home Page” in all three formats (desktop, tablet & mobile).
 -Coded “Rankings” (page 3) in all three formats (desktop, tablet & mobile).
