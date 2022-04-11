@@ -32,6 +32,7 @@ Changes from Mockup to Final:
 -Home button was moved to be with other nav buttons.
 -Hover/transition color was changed to a darker orange.
 -Text on home page was reduced to be less "clunky."
+-Positions of images change slightly in other formats to achieve aesthetics and/or to avoid conflict with the coding. 
 
 Team Challenges:
 -Coding an animated overlay with text.
